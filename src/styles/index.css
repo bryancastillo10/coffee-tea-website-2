@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@import url("sections/navbar.css");
+/* @import url("sections/hero.css"); */
+:root{
+    --pt-serif:"PT Serif", serif;
+    --cookie: "Cookie", sans-serif;
+
+    --primary-color: #854D3D;
+    --secondary-color: #4A1E1B;
+
+    --neutral-orange: #D87C1A;
+    --neutral-dark: #270C03;
+    --neutral-light: #FFF3E5;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-style:var(--pt-serif);
+}
+
+
+/* Utility Classes */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.padding-space{
+  padding:2.25rem 2.25rem;
+}
+
+/* Button */
+.ui__button{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:1rem;
+  
+  background:var(--neutral-orange);
+  color:var(--neutral-light);
+  
+  border:none;
+  outline:none;
+  padding:0.6rem;
+  border-radius:25px;
+  cursor:pointer;
+  gap:0.24rem;
+  height:50px;
+  transition: 0.8s ease-in;
+}
+
+.ui__button:hover{
+  background:var(--primary-color);
+}
+
+.ui__button img{
+  width:32px;
+  height:32px;
+}
