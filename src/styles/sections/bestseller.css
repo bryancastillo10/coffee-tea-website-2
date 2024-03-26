@@ -1,0 +1,10 @@
+.bestseller__container{
+    padding-top:2.5rem;
+    background-color: var(--neutral-yellow);
+}
+
+.bestseller__header{
+    font-family:var(--cookie);
+    font-size:2.5rem;
+    text-align:center;
+}

@@ -1,7 +1,7 @@
 import Img1 from "src/assets/images/coffee.png";
 import Img2 from "src/assets/images/tea.png";
 
-const BestSeller = [
+const BestSellerList = [
   {
     id: 1,
     img: Img1,
@@ -53,4 +53,4 @@ const BestSeller = [
   },
 ];
 
-export default BestSeller;
+export default BestSellerList;
