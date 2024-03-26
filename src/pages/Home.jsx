@@ -1,8 +1,9 @@
+import Hero from "src/components/Hero.jsx";
 
 const Home = () => {
   return (
     <div>
-        <h1>Render Test Home Page</h1>
+        <Hero/>
     </div>
   )
 }

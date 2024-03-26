@@ -76,7 +76,7 @@
 }
 
 /* Media Query for Mobile */
-@media (max-width:550px){
+@media (max-width:600px){
     .nav__menu-mobile{
         display:flex;
         cursor:pointer;

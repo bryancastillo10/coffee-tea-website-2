@@ -3,7 +3,12 @@
 
 
 @import url("sections/navbar.css");
-/* @import url("sections/hero.css"); */
+@import url("sections/hero.css");
+/* @import url("sections/bestseller.css") */
+/* @import url("sections/banner.css") */
+/* @import url("sections/mobile-ads.css")*/
+/*  @import url("sections/feedback.css") */
+
 :root{
     --pt-serif:"PT Serif", serif;
     --cookie: "Cookie", sans-serif;
@@ -33,7 +38,7 @@
     align-items: center;
   }
   
-  .flex-between {
+.flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +46,12 @@
 
 .padding-space{
   padding:2.25rem 2.25rem;
+}
+
+.brown-gradient{
+  background:linear-gradient(to right,
+  var(--primary-color),var(--secondary-color));
+  color:var(--neutral-light); 
 }
 
 /* Button */
@@ -72,4 +83,16 @@
   height:32px;
 }
 
+/* Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
+.spin {
+  animation: spin 10s linear infinite;
+}
