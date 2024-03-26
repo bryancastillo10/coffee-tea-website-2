@@ -9,10 +9,13 @@ import Close from "src/assets/icons/close.svg"
 import NavMenu from "src/arrays/NavMenu.js";
 import Button from "src/components/Button.jsx";
 
-// Dependency: react-router-DOM
+// Use State and Dependency: react-router-DOM
+import {useState} from "react";
 import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
+  const [openMenu,setOpenMenu] = useState(false);
+
   return (
       <header>
           <nav className="nav__container">
@@ -22,14 +25,14 @@ const Navbar = () => {
                 <h1>Espresso&TeaCo.</h1>
             </div>
             
-            {/* Hamburger Menu for Mobile */}
-            <div className="nav__menu-mobile">
-              <img src={MobileMenu} alt="hamburger-menu" />
+            {/* Hamburger Menu for Mobile */}  
+            <div className="nav__menu-mobile" onClick={()=>{setOpenMenu(!openMenu)}} >
+              <img src={openMenu ? Close: MobileMenu} alt="hamburger-menu" />
             </div>
 
             {/* Right: Navigation List */}
-            <div className="nav__menu-list">
-              <ul>
+            <div className="nav__links">
+              <ul className={openMenu ? "open":""}>
                 {NavMenu.map((menu) => {
                   return <li key={menu.id}>
                     <NavLink to={menu.link}>{menu.name}</NavLink></li>
