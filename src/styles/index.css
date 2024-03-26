@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 @import url("sections/navbar.css");
 @import url("sections/hero.css");
@@ -12,7 +12,8 @@
 :root{
     --pt-serif:"PT Serif", serif;
     --cookie: "Cookie", sans-serif;
-
+    --handlee: "Handlee", cursive;
+    
     --primary-color: #854D3D;
     --secondary-color: #4A1E1B;
 
