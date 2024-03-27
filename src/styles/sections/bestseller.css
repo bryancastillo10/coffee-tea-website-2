@@ -5,13 +5,13 @@
 
 .bestseller__header{
     font-family:var(--handlee);
-    font-size:2.25rem;
+    font-size:2rem;
     font-weight:700;
     text-align:center;
 }
 .bestseller__menu{
-    margin:2rem;
-    padding:2rem;
+    margin:0;
+    padding:3.5rem;
 }
 
 /* Card Section */
@@ -28,6 +28,7 @@
     transition-duration: 200ms;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
     max-width: 300px;
+    max-height:400px;
 }
 
 .card__container:hover{
@@ -44,11 +45,28 @@
     transform: translateY(-3.75em);
 }
 
+.card__image:hover{
+    transition-duration: 300ms;
+    transform:rotate(-8deg);
+}
+
 .card__content{
     margin-top: -2.75em;
+    margin-left:1.5em;
+    margin-right:1.5em;
 }
 .card__content h1{
     text-align:center;
+    line-height:1.2em;
+}
+
+.card__content p{
+    margin-top:2rem;
+    margin-bottom:1.5rem;
+    font-size:1.2rem;
+    text-align:center;
+    font-weight:400;
+    line-height:1.4rem;
 }
 
 @media screen and (max-width: 640px) 
@@ -64,6 +82,28 @@
 @media screen and (max-width: 768px) 
    { .card__main{
    grid-template-columns: repeat(1, minmax(0, 1fr)); 
-   gap:1.25rem;
-    }  
+   gap:4rem;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   }  
+    .card__container{
+        margin-top:1.5rem;
+        padding:45px;
+        max-height:320px;
+    }
+
+   .card__image img{
+    transform: translateY(-7.5em);
+   }
+   .card__content{
+    margin-top:-7.5em;
+   }
+   .card__content h1{
+    font-size:24px;
+    margin-bottom:0;
+   }
+   .card__content p{
+    font-size:1em;
+   }
  }

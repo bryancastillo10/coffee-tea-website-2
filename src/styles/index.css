@@ -8,6 +8,7 @@
 /* @import url("sections/banner.css"); */
 /* @import url("sections/mobile-ads.css");*/
 /*  @import url("sections/feedback.css"); */
+ @import url("sections/footer.css");
 
 :root{
     --pt-serif:"PT Serif", serif;

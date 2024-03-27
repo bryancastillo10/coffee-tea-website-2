@@ -1,0 +1,57 @@
+.footer__background{
+    background-image: url("../../assets/bg/coffee-footer.jpg"); 
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    width:100%;
+    min-height:300px;
+}
+.footer__container{
+    display:flex;
+    padding:0.5rem;
+    color:var(--neutral-light);
+}
+
+/* Column 1 */
+.footer__info{
+    display:block;
+    position:relative;
+    padding:2.25em;
+    margin-left:2rem;
+}
+
+.footer__info h1{
+    font-family:var(--handlee);
+    font-size:30px;
+    font-weight:800;
+    line-height:1.8;
+}
+
+.footer__info p{
+    line-height:1.7;
+    max-width:250px;
+    font-weight:500;
+}
+
+.footer__info-badge{
+    position:absolute;
+    left:0.5em;
+    background-color:;
+    font-size:18px;
+    margin:1em;
+    padding:0.25em;
+    min-width:190px;
+    border-radius:20px;
+    border-width:2px;
+    text-align:center;
+}
+/* Column 2 */
+.footer__links{
+    display:grid;
+    grid-template-columns:1fr 1fr 2fr;
+    gap:0.75rem;
+    margin-top:2.5rem;
+    
+}
+

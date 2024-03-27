@@ -1,7 +1,6 @@
 //Array
 import BestSellerList from "src/arrays/BestSeller.js";
 
-
 const Card = () => {
   return (
     <div className="card__main">
@@ -14,7 +13,7 @@ const Card = () => {
           <div className="card__content">
             <h1>{drinks.name_en}</h1>
             <h1>{drinks.name_zh}</h1>
-            <p></p>
+            <p>{drinks.description}</p>
           </div>
         </div>
     );
