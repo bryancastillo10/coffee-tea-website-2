@@ -3,13 +3,14 @@
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
-
     width:100%;
     min-height:300px;
 }
+
 .footer__container{
     display:flex;
-    padding:0.5rem;
+    padding:1rem;
+    background-color:rgba(216,124,26,0.45);
     color:var(--neutral-light);
 }
 
@@ -24,7 +25,7 @@
 .footer__info h1{
     font-family:var(--handlee);
     font-size:30px;
-    font-weight:800;
+    font-weight:bold;
     line-height:1.8;
 }
 
@@ -46,12 +47,93 @@
     border-width:2px;
     text-align:center;
 }
+
+
 /* Column 2 */
-.footer__links{
+.footer__link-container{
     display:grid;
     grid-template-columns:1fr 1fr 2fr;
     gap:0.75rem;
     margin-top:2.5rem;
     
 }
+.footer__link{
+    padding:0.7rem;
+    margin-top:1.2rem;
+    margin-left:2.25rem;
+}
 
+.footer__link h1, .footer__address h1{
+    line-height:1.8;
+    font-weight:bold;
+}
+
+.footer__link ul li{
+    list-style:none;
+   line-height:2;
+}
+
+.footer__link ul li a{
+    text-decoration:none;
+    color:var(--neutral-light);
+    transition:1s;
+}
+
+.footer__link ul li a:hover{
+    color:var(--neutral-light);
+}
+
+/* Address Section */
+.footer__address{
+    margin-top:1.7rem;
+    margin-left:2rem;
+    max-width:400px;
+    width:80%;
+    line-height:1.5;
+}
+
+.footer__address-social{
+    display:flex;
+    justify-content:flex-start;
+}
+
+/* Media Query */
+@media screen and (max-width: 640px) {
+    .footer__container{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .footer__link-container{
+        color:var(--neutral-light);
+        width:100vw;
+        
+    }
+    .footer__link{
+        display:flex;
+        flex-direction:column;
+        margin-top:0.75rem;
+        margin-left:0.8rem;
+    }
+    .footer__link h1{
+        line-height:1.2;
+        margin-bottom:0.75rem;
+    }
+
+    .footer__link ul li{
+        line-height:1.7;
+    }
+    .footer__link ul li a{
+        color:var(--neutral-light);
+    }
+
+    .footer__link ul li a:hover{
+        color:var(--secondary-color);
+    }
+
+    .footer__address{
+        margin-left:20px;
+    }
+}

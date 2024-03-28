@@ -50,6 +50,7 @@
     transform:rotate(-8deg);
 }
 
+/* Card Text Contents */
 .card__content{
     margin-top: -2.75em;
     margin-left:1.5em;
@@ -69,6 +70,7 @@
     line-height:1.4rem;
 }
 
+/* Media Query */
 @media screen and (max-width: 640px) 
     { .card__main{
         grid-template-columns: repeat(2, minmax(0, 1fr)); 

@@ -1,0 +1,14 @@
+/* Social Media Icons */
+.social__container{
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1.5rem;
+}
+
+.social__container img{
+    height:45px;
+    width:45px;
+}
+

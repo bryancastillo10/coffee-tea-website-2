@@ -1,0 +1,28 @@
+/* Button */
+.ui__button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:1rem;
+    
+    background:var(--neutral-orange);
+    color:var(--neutral-light);
+    
+    border:none;
+    outline:none;
+    padding:0.6rem;
+    border-radius:25px;
+    cursor:pointer;
+    gap:0.24rem;
+    height:50px;
+    transition: 0.8s ease-in;
+  }
+  
+  .ui__button:hover{
+    background:var(--primary-color);
+  }
+  
+  .ui__button img{
+    width:32px;
+    height:32px;
+  }
