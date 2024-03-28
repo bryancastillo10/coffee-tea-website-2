@@ -9,4 +9,7 @@ import MobileAds from "./MobileAds.jsx";
 import Banner from "./Banner.jsx";
 import Feedback from "./Feedback.jsx";
 
-export { Navbar, Hero, BestSeller, Footer, Banner, MobileAds, Feedback };
+// Order Page Component
+import OrderCards from "./OrderCards.jsx";
+
+export { Navbar, Hero, BestSeller, Footer, Banner, MobileAds, Feedback, OrderCards };

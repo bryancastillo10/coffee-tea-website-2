@@ -4,12 +4,15 @@
 
 /* landing Page Sections */
 @import url("sections/navbar.css");
-@import url("sections/hero.css");
-@import url("sections/bestseller.css");
+@import url("sections/home/hero.css");
+@import url("sections/home/bestseller.css");
 /* @import url("sections/banner.css"); */
 /* @import url("sections/mobile-ads.css");*/
 /*  @import url("sections/feedback.css"); */
  @import url("sections/footer.css");
+
+ /* Order Page Section  */
+ @import url("sections/order/order.css");
 
 :root{
     --pt-serif:"PT Serif", serif;
