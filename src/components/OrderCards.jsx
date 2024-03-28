@@ -3,7 +3,7 @@ import {ShopContext} from "src/context/ShopContext.jsx";
 
 const OrderCards = (props) => {
   const {id,beverageName,price,image} = props.data;
-  const {addToCart, cartItems} = useContext(ShopContext);
+  const {addToOrder, cartItems} = useContext(ShopContext);
   
   const cartItemAmount = cartItems[id];
 
@@ -14,8 +14,8 @@ const OrderCards = (props) => {
       <p>{beverageName}</p>
       <p>Php {price}</p>
     </div>
-    <button className="ordercards__button" onClick={()=>addToCart(id)}
-    >Add to Cart {cartItemAmount > 0 && <> ({cartItemAmount})</> }
+    <button className="ordercards__button" onClick={()=>addToOrder(id)}
+    >Order {cartItemAmount > 0 && <> ({cartItemAmount})</> }
     </button>
     </div>
   )
