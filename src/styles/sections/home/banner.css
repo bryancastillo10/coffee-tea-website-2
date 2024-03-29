@@ -1,0 +1,117 @@
+.banner__background {
+  background-image: url("../../../assets/bg/texture.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+/* Left Side in Desktop View */
+.banner__container {
+  display: flex;
+  justify-content: center;
+}
+.banner__left-image {
+  padding: 20px;
+  margin-top: 10rem;
+  margin-left: 8rem;
+  margin-right: 0;
+}
+
+.banner__left-image img {
+  max-width: 430px;
+}
+
+/* Right Side in Desktop View */
+.banner__right-content {
+  padding: 80px;
+  margin: 2.25rem 8rem;
+  margin-left: 0;
+}
+.banner__content-columns {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.banner__content-column1 img {
+  width: 64px;
+  height: 64px;
+}
+.banner__content-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 2rem;
+}
+
+#banner__icon-leaf {
+  background-color: rgba(0, 158, 115, 0.4);
+  padding: 12px;
+  border-radius: 80%;
+}
+
+#banner__icon-hot {
+  background-color: rgba(212, 17, 89, 0.4);
+  padding: 12px;
+  border-radius: 80%;
+}
+
+#banner__icon-cold {
+  background-color: rgba(26, 133, 255, 0.4);
+  padding: 12px;
+  border-radius: 80%;
+}
+
+.banner__content-column2 {
+  padding: 10px;
+  margin-left: 20px;
+  text-align: right;
+}
+/* Typography */
+.banner__content-header h1,
+.banner__content-column2 h1 {
+  font-size: 35px;
+  font-family: var(--handlee);
+  margin-bottom: 4px;
+}
+
+.banner__content-header p,
+.banner__content-column2 p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.banner__content-icon span {
+  font-weight: 700;
+}
+
+/* Media Query */
+@media screen and (max-width: 640px) {
+  .banner__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner__left-image {
+    margin: 0;
+    margin-top: 5rem;
+  }
+  .banner__right-content {
+    padding: 15px;
+    margin: 1.5rem 0.5rem;
+  }
+
+  .banner__content-header h1,
+  .banner__content-header p {
+    text-align: center;
+  }
+
+  .banner__content-column2 h1 {
+    font-size: 22px;
+  }
+  .banner__content-column2 p,
+  .banner__content-header p {
+    font-size: 16px;
+  }
+}

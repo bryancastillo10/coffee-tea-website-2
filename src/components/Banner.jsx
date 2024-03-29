@@ -21,7 +21,7 @@ const Banner = () => {
               exquisite flavor and tranquility.
             </p>
           </div>
-          
+          <div className="banner__content-columns">
             <div className="banner__content-column1">
               <div className="banner__content-icon">
                 <img id="banner__icon-leaf" src={Leaf} alt="icon-1" />

@@ -1,12 +1,13 @@
-import {Hero, BestSeller }from "src/components/";
+import { Hero, BestSeller, Banner } from "src/components/";
 
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <BestSeller/>
+      <Hero />
+      <BestSeller />
+      <Banner />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
