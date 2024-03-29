@@ -20,8 +20,8 @@ const ShopInfo = () => {
             <img src={CoffeeTime} alt="coffee-together" />
           </div>
           <div className="shopinfo__statements">
-            <h1>Get to know Espresso&Tea Co.</h1>
-            <p>
+            <h1>Get to know <span>Espresso&Tea Co.</span></h1>
+            <p id="statement-1">
               Espresso&Tea Co. is a distinguished beverage store, dedicated to
               providing an exceptional coffee and tea experience. With a
               commitment to quality and innovation, we strive to exceed the
@@ -30,7 +30,7 @@ const ShopInfo = () => {
               coffee and tea enthusiasts alike. Come indulge in the artistry of
               flavor and tradition here at Espresso&TeaCo.
             </p>
-            <p>
+            <p id="statement-2">
               Our store is not just a place to enjoy coffee and tea it's a
               destination where passion meets perfection. From our carefully
               selected beans to our meticulously brewed teas, every aspect of

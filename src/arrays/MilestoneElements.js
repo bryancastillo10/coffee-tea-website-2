@@ -1,4 +1,3 @@
-import { GiCoffeeBeans, GiTeapotLeaves } from "react-icons/gi";
 
 const milestoneElements = [
     {
