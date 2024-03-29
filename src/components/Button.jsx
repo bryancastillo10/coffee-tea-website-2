@@ -1,14 +1,14 @@
-import 'src/styles/index.css'
-import coffeeCup from "src/assets/icons/coffee-cup.svg";
+import "src/styles/index.css";
+
 const Button = (props) => {
   return (
     <div>
       <button className="ui__button">
-      <img src={coffeeCup} alt="coffee-button-icon" />
-      {props.text}
+        <img src={props.image} alt="coffee-button-icon" />
+        {props.text}
       </button>
     </div>
-  )
-}
+  );
+};
 
 export default Button;

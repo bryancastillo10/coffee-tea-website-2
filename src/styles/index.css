@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 
 /* landing Page Sections */
 @import url("sections/navbar.css");
@@ -9,58 +9,59 @@
 /* @import url("sections/banner.css"); */
 /* @import url("sections/mobile-ads.css");*/
 /*  @import url("sections/feedback.css"); */
- @import url("sections/footer.css");
+@import url("sections/footer.css");
 
- /* Order Page Section  */
- @import url("sections/order/order.css");
+/* Order Page Section  */
+@import url("sections/order/order.css");
+@import url("sections/order/checkout.css");
 
-:root{
-    --pt-serif:"PT Serif", serif;
-    --cookie: "Cookie", sans-serif;
-    --handlee: "Handlee", cursive;
-    
-    --primary-color: #854D3D;
-    --secondary-color: #4A1E1B;
+:root {
+  --pt-serif: "PT Serif", serif;
+  --cookie: "Cookie", sans-serif;
+  --handlee: "Handlee", cursive;
 
-    --neutral-orange: #D87C1A;
-    --neutral-yellow: #FFFAB2;
-    --neutral-dark: #270C03;
-    --neutral-light: #FFF3E5;
+  --primary-color: #854d3d;
+  --secondary-color: #4a1e1b;
 
+  --neutral-orange: #d87c1a;
+  --neutral-yellow: #fffab2;
+  --neutral-dark: #270c03;
+  --neutral-light: #fff3e5;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-    font-style:var(--pt-serif);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-style: var(--pt-serif);
 }
-
 
 /* Utility Classes */
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-.padding-space{
-  padding:2.25rem 2.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.brown-gradient{
-  background:linear-gradient(to right,
-  var(--primary-color),var(--secondary-color));
-  color:var(--neutral-light); 
+.padding-space {
+  padding: 2.25rem 2.25rem;
 }
 
+.brown-gradient {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--neutral-light);
+}
 
 /* Animation */
 @keyframes spin {
