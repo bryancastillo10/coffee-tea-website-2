@@ -1,12 +1,14 @@
+// Components
+import { ShopInfo, MileStone, Feedback } from "src/components/";
 
 const About = () => {
   return (
-    <section className="about" id="about">
-    <div>
-      <h1>This is the About Section</h1>
-    </div>
+    <section className="about__page-container" id="about">
+      <ShopInfo />
+      <MileStone />
+      <Feedback />
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

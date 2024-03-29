@@ -2,14 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 
-/* landing Page Sections */
+/* Global Scope Component */
 @import url("sections/navbar.css");
+@import url("sections/footer.css");
+
+/* landing Page Sections */
 @import url("sections/home/hero.css");
 @import url("sections/home/bestseller.css");
 @import url("sections/home/banner.css");
 /* @import url("sections/mobile-ads.css");*/
-/*  @import url("sections/feedback.css"); */
-@import url("sections/footer.css");
+
+/* About Page Section */
+@import url("sections/about/shopinfo.css");
+/* @import url("sections/about/milestone.css"); */
+/*  @import url("sections/about/feedback.css"); */
 
 /* Order Page Section  */
 @import url("sections/order/order.css");
@@ -75,4 +81,11 @@
 
 .spin {
   animation: spin 10s linear infinite;
+}
+
+/* Sticky NavBar Adjustments */
+.about__page-container,
+.contact__page-container {
+  margin-top: 6rem;
+  padding-top: 2rem;
 }

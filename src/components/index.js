@@ -1,4 +1,4 @@
-// Main Component
+// Global Scope Component
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 
@@ -7,6 +7,10 @@ import Hero from "./Hero.jsx";
 import BestSeller from "./BestSeller.jsx";
 import MobileAds from "./MobileAds.jsx";
 import Banner from "./Banner.jsx";
+
+// About Page Component
+import ShopInfo from "./ShopInfo.jsx";
+import MileStone from "./MileStone.jsx";
 import Feedback from "./Feedback.jsx";
 
 // Order Page Component
@@ -25,4 +29,6 @@ export {
   OrderCards,
   Button,
   CartItems,
+  ShopInfo,
+  MileStone,
 };
