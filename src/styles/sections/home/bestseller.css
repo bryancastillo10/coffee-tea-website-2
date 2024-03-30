@@ -28,7 +28,7 @@
     transition-duration: 200ms;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
     max-width: 300px;
-    max-height:400px;
+    max-height:600px;
 }
 
 .card__container:hover{
@@ -92,7 +92,7 @@
     .card__container{
         margin-top:1.5rem;
         padding:45px;
-        max-height:320px;
+        max-height:360px;
     }
 
    .card__image img{

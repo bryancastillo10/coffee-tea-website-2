@@ -79,7 +79,7 @@
 }
 
 /* Media Query for Mobile */
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width:471px) {
   .hero__container {
     display: flex;
     padding-bottom: 0;
@@ -98,5 +98,30 @@
     width: 165px;
     left: 1.25rem;
     bottom: 0.5rem;
+  }
+}
+
+@media (max-width:470px){
+  .hero__container {
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 0;
+    margin-top: 1.85rem;
+  }
+  
+  .hero__content{
+    margin-left:0;
+    padding-left:0;
+    max-width:270px;
+  }
+
+  .hero__subcontainer {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .hero__branding{
+    max-width:270px;
   }
 }

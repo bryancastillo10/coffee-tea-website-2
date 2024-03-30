@@ -14,7 +14,7 @@
 
 /* About Page Section */
 @import url("sections/about/shopinfo.css");
-/* @import url("sections/about/milestone.css"); */
+@import url("sections/about/milestone.css");
 /*  @import url("sections/about/feedback.css"); */
 
 /* Order Page Section  */

@@ -5,6 +5,7 @@ import { Navbar, Footer } from "src/components/";
 import { Home, About, Contact, Order, CheckOut } from "src/pages/";
 
 import ShopContextProvider from "src/components/context/ShopContext.jsx";
+
 const App = () => {
   return (
     <>

@@ -7,7 +7,7 @@ import SnowFlake from "src/assets/icons/snowflake.svg";
 
 const Banner = () => {
   return (
-    <section class="banner__background">
+    <section className="banner__background">
       <div className="banner__container">
         <div className="banner__left-image">
           <img className="spin" src={TeaTop} alt="tea-top" />
