@@ -21,7 +21,7 @@ import CartItems from "./CartItems.jsx";
 // UI Components
 import Button from "./ui/Button.jsx";
 import ThemeList from "./ThemeList.jsx";
-// import CricularSlider from "./CircularSlider.jsx";
+import CarouselSlider from "./ui/CarouselSlider.jsx";
 
 
 export {
@@ -39,5 +39,5 @@ export {
   MileStone,
   Button, 
   ThemeList, 
- 
+  CarouselSlider
 };

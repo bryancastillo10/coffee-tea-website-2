@@ -1,7 +1,7 @@
-// import{ useState} from "react";
+import{ useState} from "react";
 // Array
 import MilestoneElements from "src/arrays/MilestoneElements.js";
-import {ThemeList} from "src/components/";
+import {ThemeList, CarouselSlider} from "src/components/";
 
 
 // Utility
@@ -10,14 +10,14 @@ import arrowLeft from "src/assets/icons/arrow-left.svg";
 import arrowRight from "src/assets/icons/arrow-right.svg";
 
 const MileStone = () => {
-  // const [slide,setSlide] = useState(0);
-  // const nextSlide = () =>{
-  //     setSlide(slide === data.length - 1 ? 0 : slide+1);
-  // }
+  const [slide,setSlide] = useState(0);
+  const nextSlide = () =>{
+      setSlide(slide === MilestoneElements.length - 1 ? 0 : slide+1);
+  }
 
-  // const prevSlide = () =>{
-  //     setSlide(slide === 0  ? data.length - 1 : slide-1);
-  // }
+  const prevSlide = () =>{
+      setSlide(slide === 0  ? MilestoneElements.length - 1 : slide-1);
+  }
   
   return (
     <section className="milestone__page">
@@ -26,19 +26,20 @@ const MileStone = () => {
       </div>
 
       <div  className="milestone__card-container">
-        <div className="arrow arrow-left"><img src={arrowLeft}
+        <div className="arrow arrow-left" onClick={prevSlide}>
+          Previous<img src={arrowLeft} 
         width={50} height={50}
         alt="carousel-left-arrow" /></div>
-        {MilestoneElements.map((timeline)=>{
+        {MilestoneElements.map((timeline,index)=>{
           return(
-        <div key={timeline.id} className="milestone__card">
+        <div key={timeline.id} className={slide === index ? "milestone__card" : "milestone__card card-hidden"}>
           <div  className="milestone__content">
                <div className="milestone__content-header">
                     <h1>{timeline.title}</h1>
                      <p>{timeline.year}</p>
                     </div>
         <div className="milestone__content-image">
-            <img src={getImageURL(timeline.image)} alt="" />
+            <img src={getImageURL(timeline.image)} alt="timeline-image-features" />
           </div>
         </div>
          <div className="milestone__subcontent">
@@ -48,10 +49,11 @@ const MileStone = () => {
         </div>
         )
         })}
-        <div className="arrow arrow-right">
-        <img src={arrowRight} width={50} height={50}
+        <div className="arrow arrow-right" onClick={prevSlide}>Next
+        <img src={arrowRight} width={50} height={50} 
         alt="carousel-right-arrow" />
-        {/* <CircularSlider data={timeline}/> */}
+        <CarouselSlider MilestoneElements={MilestoneElements} slide={slide}
+        setSlide={setSlide} />
         </div>
       </div>      
     </section>
