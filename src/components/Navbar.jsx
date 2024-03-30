@@ -7,7 +7,7 @@ import Close from "src/assets/icons/close.svg";
 import coffeeCup from "src/assets/icons/coffee-cup.svg";
 // Array and Components
 import NavMenu from "src/arrays/NavMenu.js";
-import Button from "src/components/Button.jsx";
+import Button from "src/components/ui/Button.jsx";
 
 // Use State and Dependency: react-router-DOM
 import { useState } from "react";

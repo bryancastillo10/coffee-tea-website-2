@@ -8,6 +8,7 @@
 /* Header Section */
 .milestone__header{
     margin:1.2rem;
+    margin-bottom:2rem;
 }
 
 .milestone__header h1{
@@ -16,15 +17,99 @@
     color:var(--primary-color);
 }
 
+
+/* Card Section */
 .milestone__card-container{
     position:relative;
     display:flex;
     justify-content:center;
     align-items:center;
-    width:800px;
-    height:400px;
+    margin:2.25rem;
+    width:1200px;
+    max-height:400px;
+    gap:2.25rem;
 }
 
+.milestone__card{
+    border:2px solid var(--neutral-orange);
+    background-color:var(--neutral-yellow);
+    border-radius:24px;
+    flex:1;
+}
+
+/* Upper Part of the Card */
+.milestone__content{
+    display:flex; 
+    padding:1.5rem;
+}
+
+.milestone__content-header{
+    display:flex; 
+    flex-direction:column;
+}
+
+.milestone__content-header h1{
+    display:inline-block;
+    font-size:32px;
+    line-height:1;
+    text-align:justify;
+}
+
+.milestone__content-header p{
+    background-color:var(--neutral-orange);
+    color:var(--neutral-light);
+    padding:0.5em;
+    margin-top:1rem;
+    font-size:20px;
+    font-weight:800;
+    max-width:60px;
+    border:none;
+    align-content:center;
+    border-radius:1.5em;
+}
+
+.milestone__content-image img{
+    width:150px;
+    height:150px;
+    border:2px solid var(--neutral-orange);
+    border-radius:100%;
+}
+
+
+/* Lower Part of the Card */
+.milestone__subcontent{
+    padding:10px;
+}
+
+.milestone__subcontent p{
+    font-size:20px;
+    line-height:1.5;
+    text-align:center;
+}
+.milestone__subcontent ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1.5rem;
+    margin-top:0.75rem;
+    padding:0.5rem;
+    display:flex; 
+}
+
+.milestone__subcontent ul li{
+    list-style:none;
+    padding:10px;
+    border-radius:28px;
+    width:150px;
+    text-align:center;
+    font-weight:700;
+    font-size:20px;
+    background-color:rgba(216,124,26,0.5);
+    color:var(--neutral-light);
+}
+
+
+/* Slide UI components */
 .milestone__slide{
     border-radius:0.5rem;
     box-shadow: 0px 0px 7px black;

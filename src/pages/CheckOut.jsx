@@ -9,7 +9,7 @@ import { ShopContext } from "src/components/context/ShopContext.jsx";
 
 // Component
 import CartItems from "src/components/CartItems.jsx";
-import Button from "src/components/Button.jsx";
+import Button from "src/components/ui/Button.jsx";
 
 const CheckOut = () => {
   const { cartItems, getTotalPriceAmount } = useContext(ShopContext);

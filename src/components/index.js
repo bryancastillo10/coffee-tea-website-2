@@ -15,8 +15,14 @@ import Feedback from "./Feedback.jsx";
 
 // Order Page Component
 import OrderCards from "./OrderCards.jsx";
-import Button from "./Button.jsx";
+
 import CartItems from "./CartItems.jsx";
+
+// UI Components
+import Button from "./ui/Button.jsx";
+import ThemeList from "./ThemeList.jsx";
+// import CricularSlider from "./CircularSlider.jsx";
+
 
 export {
   Navbar,
@@ -31,4 +37,7 @@ export {
   CartItems,
   ShopInfo,
   MileStone,
+  Button, 
+  ThemeList, 
+ 
 };

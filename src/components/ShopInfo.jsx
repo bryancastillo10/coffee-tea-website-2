@@ -2,7 +2,7 @@
 import CoffeeTime from "src/assets/images/about.png";
 
 // Components
-import Button from "src/components/Button.jsx";
+import Button from "src/components/ui/Button.jsx";
 
 const ShopInfo = () => {
   return (
