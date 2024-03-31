@@ -11,6 +11,10 @@ import { ShopContext } from "src/components/context/ShopContext.jsx";
 import CartItems from "src/components/CartItems.jsx";
 import Button from "src/components/ui/Button.jsx";
 
+// Icons
+import CartCheers from "src/assets/icons/cart.svg";
+import CashOut from "src/assets/icons/cashout.svg";
+
 const CheckOut = () => {
   const { cartItems, getTotalPriceAmount } = useContext(ShopContext);
   const totalPrice = getTotalPriceAmount();
@@ -32,9 +36,9 @@ const CheckOut = () => {
         <p>Subtotal: Php {totalPrice}</p>
         <Link to={"/order"}>
           {" "}
-          <Button text="Continue Shopping" />
+          <Button text="Continue Shopping" image={CartCheers}/>
         </Link>
-        <Button text="Proceed to Payment" />
+        <Button text="Proceed to Payment" image={CashOut}/>
       </div>
     </section>
   );

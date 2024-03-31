@@ -9,7 +9,7 @@
 
 .footer__wrapper{
     padding: 1rem;
-    background-color: rgba(216, 124, 26, 0.45);
+    background-color: rgba(74,30,27,0.7);
     min-height:300px;
     color: var(--neutral-light);
   }
@@ -58,6 +58,7 @@
     margin: 1em;
     padding: 0.5em;
     max-width: 220px;
+    border:2px solid #fff;
     border-radius: 20px;
     border-width: 2px;
     text-align: center;
