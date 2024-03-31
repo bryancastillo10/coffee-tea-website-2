@@ -1,6 +1,7 @@
 .bestseller__container{
     padding-top:2.5rem;
     background-color: var(--neutral-yellow);
+    margin:0 auto;
 }
 
 .bestseller__header{
@@ -10,8 +11,10 @@
     text-align:center;
 }
 .bestseller__menu{
-    margin:0;
+    margin:0 auto;
     padding:3.5rem;
+    display:flex;
+    justify-content:center;
 }
 
 /* Card Section */
