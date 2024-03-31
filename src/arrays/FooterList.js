@@ -11,8 +11,8 @@ export const FootList = [
     },
     {
       id:3,
-      title: "Contact",
-      link: "/contact",
+      title: "News",
+      link: "/news",
     },
     {
       id:4,

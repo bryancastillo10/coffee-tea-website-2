@@ -11,8 +11,8 @@ const NavMenu = [
     },
     {
       id: 3,
-      name: "Contact",
-      link: "/contact",
+      name: "News",
+      link: "/news",
     },
   ];
   

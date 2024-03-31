@@ -7,7 +7,7 @@ const milestoneElements = [
     theme: ["Craftsmanship", "Origins", "Community"],
     year:  "2013",
     description: "Espresso&Tea Co. opens its doors for the first time, introducing a variety of coffee and tea blends to the community.",
-    image: "step1.png"
+    image: "milestone/step1.png"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const milestoneElements = [
     year: "2015",
     theme: ["Growth", "Expansion", "Demand"],
     description: "Due to popular demand, Espresso&Tea Co. expands by opening a second location in the city of Manila.",
-    image: "step2.png"
+    image: "milestone/step2.png"
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const milestoneElements = [
     year: "2017",
     theme: ["Exclusive", "Asian Delicacy", "Tea Lover"],
     description: "In celebration of Chinese New Year, Espresso&Tea Co. introduces an authentic tea crafted for every tea lover's taste.",
-    image: "step3.png"
+    image: "milestone/step3.png"
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const milestoneElements = [
     year: "2018",
     theme: ["Recognition", "Excellence", "Commitment"],
     description: "Espresso&Tea Co. proudly receives the prestigious Taster's Choice Award, recognizing our commitment to excellence in coffee and tea craftsmanship.",
-    image: "step4.png"
+    image: "milestone/step4.png"
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const milestoneElements = [
     year: "2020",
     theme: ["Adaptability", "E-commerce", "Scaling up"],
     description: "Due to the COVID-19 pandemic, our store swiftly adapts to the changing business landscape by launching the online delivery system.",
-    image: "step5.png"
+    image: "milestone/step5.png"
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ const milestoneElements = [
     year: "2021",
     theme: ["Responsibility", "Awareness", "Solidarity"],
     description: "Deepening our role in the society, Espresso&Tea Co. helps foster positive change through our community program.",
-    image: "step6.png"
+    image: "milestone/step6.png"
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ const milestoneElements = [
     year: "2023",
     theme: ["Milestone", "Celebration", "Promotions"],
     description: "Espresso&Tea Co. celebrates its 10th anniversary with special events, promotions, and the introduction of new menu items.",
-    image: "step7.png"
+    image: "milestone/step7.png"
   }
 ];
 
