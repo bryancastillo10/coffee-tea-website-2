@@ -6,6 +6,12 @@
     margin:2.2rem;
     padding:4rem;
 }
+
+.shopinfo__wrapper{
+    margin:auto;
+    width:80%;
+    max-width:1200px;
+}
 .shopinfo__header{
     padding:2.25rem;
 }
@@ -20,7 +26,7 @@
 /* Typography */
 .shopinfo__container h1{
     text-align:center;
-    font-size:34px;
+    font-size:42px;
     font-family:var(--handlee);
     font-weight:bold;
     color:var(--primary-color);
@@ -28,7 +34,7 @@
 
 .shopinfo__container p{
     text-align:center;
-    font-size:24px;
+    font-size:30px;
     font-weight:700;
 }
 .shopinfo__statements h1 span{
@@ -62,6 +68,16 @@
     transform:scale(1.1);
 }
 
+/* Media Query */
+@media screen and (max-width: 1200px) {
+    .shopinfo__content{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:1.5rem;
+    }
+}
 
 @media screen and (max-width: 640px) {
     .shopinfo__content{

@@ -8,6 +8,7 @@ const ShopInfo = () => {
   return (
     <section className="shopinfo__background">
       <div className="shopinfo__container">
+        <div className="shopinfo__wrapper">
         <div className="shopinfo__header">
           <h1>Warm embrace in a cup of coffee or tea</h1>
           <p>
@@ -38,6 +39,9 @@ const ShopInfo = () => {
             </p>
           </div>
         </div>
+
+        </div>
+      
       </div>
     </section>
   );

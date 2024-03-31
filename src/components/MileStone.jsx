@@ -23,6 +23,7 @@ const MileStone = () => {
     <section className="milestone__page">
       <div className="milestone__header">
         <h1>A Brewing Journey</h1>
+        <p>We proudly present some of the shop's milestones. Check this out:</p>
       </div>
 
       <div  className="milestone__card-container">

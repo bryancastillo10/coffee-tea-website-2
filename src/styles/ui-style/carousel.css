@@ -1,8 +1,7 @@
 /* Slide UI components */
-.card-hidden{
+.card-hidden {
     display:none;
 }
-
 .arrow{
     position:absolute;
     width:2.25rem;
