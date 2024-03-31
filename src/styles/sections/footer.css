@@ -7,18 +7,25 @@
     min-height:300px;
 }
 
-.footer__container{
-    display:flex;
+.footer__wrapper{
+    
     padding:1rem;
     background-color:rgba(216,124,26,0.45);
     color:var(--neutral-light);
+}
+
+.footer__container{
+    display:flex;
+    flex-wrap:wrap;
+    padding:2.5rem;
+    flex:1;
 }
 
 /* Column 1 */
 .footer__info{
     display:block;
     position:relative;
-    padding:2.25em;
+    padding:2em;
     margin-left:2rem;
 }
 

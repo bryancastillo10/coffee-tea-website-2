@@ -26,6 +26,7 @@
 
 /* Right Side in Desktop View */
 .banner__right-content {
+  max-width:800px;
   padding: 80px;
   margin: 2.25rem 8rem;
 }

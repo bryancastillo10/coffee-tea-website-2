@@ -21,7 +21,7 @@ const milestoneElements = [
     id: 3,
     title: "Exclusive Dragon Tea Edition",
     year: "2017",
-    theme: ["Exclusive", "Chinese New Year", "Tea Lover"],
+    theme: ["Exclusive", "Asian Delicacy", "Tea Lover"],
     description: "In celebration of Chinese New Year, Espresso&Tea Co. introduces an authentic tea crafted for every tea lover's taste.",
     image: "step3.png"
   },
@@ -37,7 +37,7 @@ const milestoneElements = [
     id: 5,
     title: "Online Delivery Store",
     year: "2020",
-    theme: ["Adaptability", "COVID-19", "E-commerce"],
+    theme: ["Adaptability", "E-commerce", "Scaling up"],
     description: "Due to the COVID-19 pandemic, our store swiftly adapts to the changing business landscape by launching the online delivery system.",
     image: "step5.png"
   },
@@ -45,7 +45,7 @@ const milestoneElements = [
     id: 6,
     title: "Community Outreach Program",
     year: "2021",
-    theme: ["Social Responsibility", "Community Engagement", "Positive Change"],
+    theme: ["Responsibility", "Awareness", "Solidarity"],
     description: "Deepening our role in the society, Espresso&Tea Co. helps foster positive change through our community program.",
     image: "step6.png"
   },

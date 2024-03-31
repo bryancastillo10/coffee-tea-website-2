@@ -7,7 +7,7 @@ import { OrderMenu } from "src/arrays/Menu.js";
 import { OrderCards, Button } from "src/components/";
 
 // Icon
-import CartCheers from "src/assets/icons/cheers.svg";
+import CartCheers from "src/assets/icons/cart.svg";
 
 const Order = () => {
   return (

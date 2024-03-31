@@ -10,6 +10,7 @@ import Social from "src/components/Social.jsx";
 const Footer = () => {
   return (
     <section className="footer__background">
+      <div className="footer__wrapper">
         <div className="footer__container">
           <div className="footer__info">
               <h1>Espresso&TeaCo.</h1>
@@ -42,6 +43,7 @@ const Footer = () => {
                   <div className="footer__address-social"><Social/></div>
             </div>
           </div>
+        </div>
         </div>
     </section>
   )

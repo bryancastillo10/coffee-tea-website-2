@@ -17,6 +17,10 @@
 @import url("sections/about/milestone.css");
 /*  @import url("sections/about/feedback.css"); */
 
+/* User Interfaces */
+@import url("ui-style/carousel.css");
+
+
 /* Order Page Section  */
 @import url("sections/order/order.css");
 @import url("sections/order/checkout.css");
