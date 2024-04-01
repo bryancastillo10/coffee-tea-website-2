@@ -1,5 +1,4 @@
 @import url("../ui-style/button.css");
-
 .nav__container {
   display: flex;
   justify-content: space-between;
@@ -10,6 +9,7 @@
   z-index: 1;
   background-color: var(--secondary-color);
   color: #fff;
+  padding: 0 10px;
 }
 
 /* Navbar Left Section */
@@ -39,7 +39,7 @@
 }
 
 .nav__links ul li {
-  font-size:28px;
+  font-size: 28px;
   list-style: none;
   transition: 1s ease-in;
   font-weight: 700;
@@ -79,10 +79,11 @@
 }
 
 /* Media Query for Mobile */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .nav__menu-mobile {
     display: flex;
     cursor: pointer;
+    right: 2.5rem;
   }
 
   .nav__logo {

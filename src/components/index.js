@@ -23,7 +23,6 @@ import Button from "./ui/Button.jsx";
 import ThemeList from "./ThemeList.jsx";
 import CarouselSlider from "./ui/CarouselSlider.jsx";
 
-
 export {
   Navbar,
   Hero,
@@ -37,7 +36,6 @@ export {
   CartItems,
   ShopInfo,
   MileStone,
-  Button, 
-  ThemeList, 
-  CarouselSlider
+  ThemeList,
+  CarouselSlider,
 };
