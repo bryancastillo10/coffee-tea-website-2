@@ -8,7 +8,7 @@ export const ShopContext = createContext(null);
 const getDefaultCart = () => {
   let orderItems = {};
   for (let i = 1; i < OrderMenu.length + 1; i++) {
-    orderItems[i] = 0;
+    orderItems[i] = { quantity: 0, size: "small" };
   }
   return orderItems;
 };
@@ -27,12 +27,23 @@ const ShopContextProvider = (props) => {
     return totalPrice;
   };
 
-  const addToOrder = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+  const addToOrder = (itemId,size) => {
+    setCartItems((prev) => ({
+      ...prev,
+      [itemId]: {
+        quantity: prev[itemId].quantity + 1,
+        size: size,
+      },
+    }));
   };
-
   const removeFromOrder = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    setCartItems((prev) =>  ({
+      ...prev,
+      [itemId]: {
+        quantity: prev[itemId].quantity - 1,
+        size: prev[itemId].size,
+      },
+    }));
   };
 
   const updateOrderCount = (newAmount, itemId) => {

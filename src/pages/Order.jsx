@@ -21,7 +21,7 @@ const Order = () => {
         </div>
         <div className="order__menu">
           {OrderMenu.map((drinks) => (
-            <OrderCards data={drinks} />
+            <OrderCards key={drinks.id} data={drinks} />
           ))}
         </div>
       </div>

@@ -28,14 +28,13 @@ const CheckOut = () => {
       <div className="order__menu">
         {OrderMenu.map((drinks) => {
           if (cartItems[drinks.id] !== 0) {
-            return <CartItems data={drinks} />;
+            return <CartItems key={drinks.id} data={drinks} />;
           }
         })}
       </div>
       <div className="checkout__button">
         <p>Subtotal: Php {totalPrice}</p>
         <Link to={"/order"}>
-          {" "}
           <Button text="Continue Shopping" image={CartCheers}/>
         </Link>
         <Button text="Proceed to Payment" image={CashOut}/>

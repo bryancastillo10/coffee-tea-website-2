@@ -22,6 +22,7 @@ import CartItems from "./CartItems.jsx";
 import Button from "./ui/Button.jsx";
 import ThemeList from "./ThemeList.jsx";
 import CarouselSlider from "./ui/CarouselSlider.jsx";
+import Confirm from "./ui/Confirm.jsx";
 
 export {
   Navbar,
@@ -38,4 +39,5 @@ export {
   MileStone,
   ThemeList,
   CarouselSlider,
+  Confirm,
 };
