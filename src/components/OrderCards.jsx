@@ -3,9 +3,9 @@ import { ShopContext } from "src/components/context/ShopContext.jsx";
 
 const OrderCards = (props) => {
   const { id, beverageName, price, image, isCoffee } = props.data;
-  const { addToOrder, cartItems } = useContext(ShopContext);
+  // const { addToOrder, cartItems } = useContext(ShopContext);
   const [size,setSize] = useState("small");
-  const cartItemAmount = cartItems[id]?.quantity||0;
+  // const cartItemAmount = cartItems[id]?.quantity||0;
 
   const handleSizeChange = (newSize) =>{
     setSize(newSize);
@@ -35,7 +35,7 @@ const OrderCards = (props) => {
             Large
           </label>
         </div>
-        <p>Php {price[size]}</p>
+        <p>Php {price.}</p>
       </div>
       <button className="ordercards__button" onClick={() => addToOrder(id, size)}>
         Order {cartItemAmount > 0 && <> ({cartItemAmount})</>}

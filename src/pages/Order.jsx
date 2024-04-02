@@ -1,7 +1,7 @@
 // React-Router-DOM
 import { Link } from "react-router-dom";
 // Array
-import { OrderMenu } from "src/arrays/Menu.js";
+import { Menu } from "src/arrays/Menu.js";
 
 // Component
 import { OrderCards, Button } from "src/components/";
@@ -20,7 +20,7 @@ const Order = () => {
           </Link>
         </div>
         <div className="order__menu">
-          {OrderMenu.map((drinks) => (
+          {Menu.map((drinks) => (
             <OrderCards key={drinks.id} data={drinks} />
           ))}
         </div>
