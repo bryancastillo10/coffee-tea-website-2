@@ -21,9 +21,9 @@ const Order = () => {
           </Link>
         </div>
         <div className="order__menu">
-          {Menu.map((drinks) => (
-            <OrderCards key={drinks.id} data={drinks} />
-          ))}
+          {Menu.map((drinks,id) => 
+             <OrderCards key={id} data={drinks} />
+          )}
         </div>
       </div>
     </section>

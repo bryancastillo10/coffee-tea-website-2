@@ -24,7 +24,7 @@ export const Menu = [
     id: 4,
     beverageName: "Machiato",
     price: 100,
-    image: Img2,
+    image: Img1,
   },
   {
     id: 5,
@@ -50,4 +50,10 @@ export const Menu = [
     price: 110,
     image: Img2,
   },
+  {
+    id: 8,
+    beverageName: "Deluxe Green Tea",
+    price: 180,
+    image: Img2,
+  }
 ];

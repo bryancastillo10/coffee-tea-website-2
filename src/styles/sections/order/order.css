@@ -1,9 +1,10 @@
 .order__menu {
-  margin: 3rem;
+  margin: 2rem;
   padding: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Divide into 5 equal columns */
-  grid-auto-rows: minmax(100px, auto);
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,0.25fr));
+  justify-content:center;
+  gap:1rem;
 }
 
 /* Header */
@@ -15,6 +16,7 @@
 
 .order__page h1 {
   padding: 1.1 rem;
+  font-size:32px;
   text-align: center;
 }
 
@@ -28,25 +30,44 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width:90%;
   gap: 1.5rem;
-  border-radius: 25px;
-  margin: 4px;
+  border-radius: 1rem;
+  margin: 10px auto;
   border: 2px solid black;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
 }
+
+.ordercards__container:hover{
+  background-color:var(--primary-color);
+  color:#fff;
+}
+
+
 .ordercards__container img {
-  width: 100px;
-  height: 100px;
+  transform: translateY(-2em);
+  width: 150px;
+  height: 150px;
+}
+
+.ordercards__container img:hover{
+  transition-duration: 300ms;
+  transform:rotate(8deg);
 }
 
 .ordercards__content {
+  transform: translateY(-2em);
+  font-size:18px;
   font-weight: 700;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .ordercards__button {
-  padding: 12px;
+  display:flex;
+  justify-content:center;
+  padding: 10px;
   margin-bottom: 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--neutral-orange);
   color: #fff;
   border: none;
   font-size:18px;
@@ -56,5 +77,55 @@
 }
 
 .ordercards__button:hover {
-  background-color: var(--neutral-orange);
+  background-color: var(--neutral-yellow);
+  color:#000;
+}
+
+/* Media Query */
+@media screen and (max-width: 1020px) {
+  .order__menu {
+    position:relative;
+    margin: 2rem;
+    padding: 1.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1rem;
+  }
+  .order__page-header{
+      margin-top:1rem;
+      display:flex;
+      flex-direction:column;
+  }
+  .order__page-header button{
+        position:fixed;
+        margin-top:100px;
+        z-index:1;
+        right:0.5rem;
+  }
+  .ordercards__container{
+    width:350px;
+  }
+
+  .ordercards__container img:hover{
+    transition-duration: 300ms;
+    transform:rotate(10deg);
+  } 
+}
+
+@media screen and (max-width: 1020px){
+  .order__menu {
+    margin: 2rem;
+    padding: 2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1rem;
+  }
+  .order__page h1{
+    font-size:28px;
+  }
+  .ordercards__container{
+    width:220px;
+  }
 }
