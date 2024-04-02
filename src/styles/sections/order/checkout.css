@@ -2,6 +2,14 @@
   margin-top: 6rem;
   padding-top: 2rem;
 }
+.order__checkout{
+  display:flex;
+  justify-content:start;
+  align-items:center;
+  margin: 0 auto;
+}
+
+
 .cartItems__counter {
   display: flex;
   justify-content: center;
