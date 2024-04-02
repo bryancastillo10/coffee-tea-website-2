@@ -4,12 +4,12 @@ import { ShopContext } from "src/components/context/ShopContext.jsx";
 const OrderCards = (props) => {
   const { id, beverageName, price, image, isCoffee } = props.data;
   // const { addToOrder, cartItems } = useContext(ShopContext);
-  const [size,setSize] = useState("small");
+  const [size, setSize] = useState("small");
   // const cartItemAmount = cartItems[id]?.quantity||0;
 
-  const handleSizeChange = (newSize) =>{
+  const handleSizeChange = (newSize) => {
     setSize(newSize);
-  }
+  };
   return (
     <div className="ordercards__container">
       <img src={image} alt="order-list-menu" />
@@ -35,13 +35,15 @@ const OrderCards = (props) => {
             Large
           </label>
         </div>
-        <p>Php {price.}</p>
+        <p>Php {price.size}</p>
       </div>
-      <button className="ordercards__button" onClick={() => addToOrder(id, size)}>
+      <button
+        className="ordercards__button"
+        onClick={() => addToOrder(id, size)}
+      >
         Order {cartItemAmount > 0 && <> ({cartItemAmount})</>}
       </button>
     </div>
-
   );
 };
 
