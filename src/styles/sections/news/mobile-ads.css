@@ -1,0 +1,26 @@
+.mobile__background {
+    background-image: url("../../../assets/bg/coffee-tea-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+.mobile__container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    gap:1rem;
+}
+.mobile__header{
+    border:2px solid black;
+}
+
+.mobile__header h1{
+    font-size:42px;
+    color:#fff;
+}
+
+.mobile__image-section{
+    display:flex;
+    border:2px solid black;
+}

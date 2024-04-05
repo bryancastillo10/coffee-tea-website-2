@@ -1,7 +1,10 @@
-// import { Headlines,Testimonials,MobileAds} from "src/components";
+import { MobileAds} from "src/components";
 
+// Headlines Testimonials
 const News = () => {
-  return <section className="news__page-container" id="news"></section>;
+  return <section className="news__page-container" id="news">
+      <MobileAds/>
+  </section>;
 };
 
 export default News;

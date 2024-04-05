@@ -10,12 +10,14 @@
 @import url("sections/home/hero.css");
 @import url("sections/home/bestseller.css");
 @import url("sections/home/banner.css");
-/* @import url("sections/mobile-ads.css");*/
 
 /* About Page Section */
 @import url("sections/about/shopinfo.css");
 @import url("sections/about/milestone.css");
 @import url("sections/about/feedback.css");
+
+/* News Page Section */
+@import url("sections/news/mobile-ads.css");
 
 /* Order Page Section  */
 @import url("sections/order/order.css");
@@ -88,7 +90,8 @@
 }
 
 /* Sticky NavBar Adjustments */
-.news__page-container {
-  margin-top: 6rem;
+.news__page-container, .payment__page-container {
+  margin-top: 4.1rem;
   padding-top: 2rem;
 }
+

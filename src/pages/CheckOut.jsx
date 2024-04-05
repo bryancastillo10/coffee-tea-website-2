@@ -22,22 +22,28 @@ const CheckOut = () => {
   return (
     <section className="order__page">
       <div className="order__page-container">
-       <div className="cartItems__content">
-
-       <h1>Your Order: </h1>
+       <div className="order__page-header">
+            <h1>Your Order: </h1>
+       </div>
+       
+       <div className="order__menu">
        {Menu.map((drink)=>{
         if(cartItems[drink.id] !== 0){
           return <CartItems key={drink.id} data={drink} />
         }
        })}
        </div>
+       {/* Total Price Section */}
+       <div className="checkout__subtotal">
        {totalPrice > 0 ?
-       <div className="order__subtotal">
-        <p>SubTotal: ${totalPrice}</p>
+       <div>
+        <h1>SubTotal: <span>${totalPrice}</span> </h1>
         <Link to="/order"><Button text="Continue Shopping" image={CartCheers}/></Link>
-        <Button text="Proceed to Payment" image={CashOut}/>
+        <Link to="/payment"><Button text="Proceed to Payment" image={CashOut}/></Link>
         </div> 
        : <h1> Your cart is Empty</h1>} </div>
+       </div>
+
     </section>
   );
 };

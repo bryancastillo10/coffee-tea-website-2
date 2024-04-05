@@ -2,7 +2,7 @@ import React from "react";
 import { Router, Route, Routes } from "react-router-dom";
 
 import { Navbar, Footer } from "src/components/";
-import { Home, About, News, Order, CheckOut } from "src/pages/";
+import { Home, About, News, Order, CheckOut,Payment } from "src/pages/";
 
 import ShopContextProvider from "src/components/context/ShopContext.jsx";
 
@@ -17,6 +17,7 @@ const App = () => {
           <Route path="/news" element={<News />} />
           <Route path="/order" element={<Order />} />
           <Route path="/check-out" element={<CheckOut />} />
+          <Route path="/payment" element={<Payment />} />
         </Routes>
         <Footer />
       </ShopContextProvider>

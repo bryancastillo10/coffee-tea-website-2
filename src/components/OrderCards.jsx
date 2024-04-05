@@ -14,7 +14,6 @@ const OrderCards = (props) => {
       <div className="ordercards__content">
         <p>{beverageName}</p>
         <p>Php {price}</p>
-        <p></p>
         <button className="ordercards__button" onClick={()=>{addToOrder(id)}}>
           Order{ orderQuantity>0 && <>({orderQuantity})</>}
           </button>
